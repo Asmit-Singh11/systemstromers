@@ -1,0 +1,112 @@
+<div class="back">
+  <a href="home.html"><button>back</button></a>
+</div>
+<div class="body">
+<h1 style="font-family: jokerman; font-size: 40px; text-align: center;">Settings</h1></div>
+<style>
+  .body{
+    position: absolute;
+    top: -5%;
+    right: 50%;
+  }
+  .back{
+    position: sticky;
+  }
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style><p style="font-family:cursive;"><br>
+Enable dark mode:
+<button onclick="button()"> 
+<img src="D:\dark.png"></button></p>
+<p style="font-family:cursive;">
+  Sound <input type="range" name="">
+</p>
+<p style="font-family: cursive;">Resoloution <input placeholder="1000*500px"></p>
+<script>
+function button() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+<!--
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Card Flip with Text</h1>
+<h3>Hover over the image below:</h3>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>John Doe</h1> 
+      <p>Architect & Engineer</p> 
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>-->
